@@ -1,0 +1,19 @@
+html, body {
+    margin:0%;
+    height: 100%;
+}
+
+.container {
+    border: 2px solid red;
+    margin: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    
+}
