@@ -7,7 +7,7 @@ document.body.appendChild(container);
 container.className = 'container'
 
 
-genDivs(4)
+genDivs(6)
 function genDivs(v) {
     let e = container;
     for (i=0;i<v;i++) {

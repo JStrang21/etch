@@ -4,16 +4,24 @@ html, body {
 }
 
 .container {
-    border: 2px solid red;
     margin: 0%;
     height: 100%;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: column;  
 }
 
 .row {
     display: flex;
     justify-content: space-around;
-    
+    flex-grow: 1;
+}
+
+.cell {
+    flex-grow: 1;
+    transition: .3s linear;
+}
+
+div.cell:hover {
+    background-color: magenta;
 }
