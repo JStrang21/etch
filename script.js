@@ -1,13 +1,16 @@
-/*const containerDIV = document.createElement('div');
-document.body.appendChild(containerDIV);
-const grid = document.createElement('div');
-containerDIV.appendChild(grid);*/
+const btn = document.querySelector('button');
+btn.addEventListener('mousedown', function reload() {
+    window.location.reload(true);
+})
+btn.addEventListener('mouseup', function input() {
+    let v = prompt();
+    genDivs(v);
+});
+
 const container = document.createElement('div');
 document.body.appendChild(container);
 container.className = 'container'
 
-
-genDivs(6)
 function genDivs(v) {
     let e = container;
     for (i=0;i<v;i++) {
@@ -16,9 +19,10 @@ function genDivs(v) {
         for(x=1;x<=v;x++) {
             let cell = document.createElement('div');
             cell.className = 'cell';
-            cell.innerText = (i*v)+x;
+            /*cell.innerText = (i*v)+x;*/
             row.appendChild(cell);
         }
     e.appendChild(row);
     }
 }
+

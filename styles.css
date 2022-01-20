@@ -19,9 +19,14 @@ html, body {
 
 .cell {
     flex-grow: 1;
-    transition: .3s linear;
+    transition: .2s linear;
 }
 
 div.cell:hover {
     background-color: magenta;
+}
+
+button {
+    display: flex;
+    margin: auto;
 }
