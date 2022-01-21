@@ -1,6 +1,7 @@
 html, body {
     margin:0%;
     height: 100%;
+    background-color: ivory;
 }
 
 .container {
@@ -27,6 +28,19 @@ html, body {
 }*/
 
 button {
-    display: flex;
-    margin: auto;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    padding: 5px;
+    width: 100px;
+    background-color: rgb(165, 252, 208);
+    border-radius: 10px;
+    border: 2px solid rgb(23, 90, 21);
+    text-transform: uppercase;
 }
+
+button:hover {
+    background-color: aqua;
+}
+

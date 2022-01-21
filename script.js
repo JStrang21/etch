@@ -3,7 +3,7 @@ btn.addEventListener('mousedown', function reload() {
     window.location.reload(true);
 })
 btn.addEventListener('mouseup', function input() {
-    const v = prompt();
+    const v = prompt('Enter a number:', );
     if (v>200) {
         alert('Number is too big')
     }
