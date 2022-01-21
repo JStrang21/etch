@@ -4,8 +4,13 @@ btn.addEventListener('mousedown', function reload() {
 })
 btn.addEventListener('mouseup', function input() {
     const v = prompt();
-    genDivs(v);
-    select(v)
+    if (v>200) {
+        alert('Number is too big')
+    }
+    else {
+        genDivs(v);
+        select(v)
+    }
 });
 
 const container = document.createElement('div');
@@ -35,39 +40,9 @@ function select(v) {
     let x = cells.length;
     for(i=0;i<x;i++) {
         cells[i].addEventListener('mouseover', function color() {
-            cells.style.backgroundColor = 'blue';   
+            this.style.backgroundColor = 'blue'; /*using this.style instead of cells.style works!!!!*/
         })
     }
 }
-
-/*for (i=0;i<x;i++) {
-    cells[i].addEventListener('mouseover', function color(){
-        cells[i].style.backgroundColor = 'blue';
-    })
-}*/
-
-
-
-/*const contain = document.getElementsByClassName('container');
-const rows = document.querySelectorAll('div.container>div.row');
-console.log(rows[1])*/
-
-
-/*const cell = document.querySelectorAll(".container>.row");
-console.log(cell[0]);
-cell.addEventListener('onmouseover', function(){
-   console.log('boobs')
-   
-   
-    /*for (i=0;i<v;i++) {
-        cell.style.cssText= 'background-color:blue';
-    }*/
-
-
-
-
-/*cell.addEventListener('mouseover', function(){
-    cell.style.backgroundColor = 'red';
-})*/
 
 
