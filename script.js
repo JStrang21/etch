@@ -32,7 +32,8 @@ function genDivs(v) {
     }
 }
 
-const color = [,'#0e2431','#fc3a52','#f9b248','#e8d5b7'];
+const randomColor = () => Math.floor(Math.random()*16777215).toString(16);   /*for random color for each child*/
+/*const randomColor = Math.floor(Math.random()*16777215).toString(16);*/     /*for random color for each reset*/
 
 
 function select(v) {
@@ -40,7 +41,7 @@ function select(v) {
     let x = cells.length;
     for(i=0;i<x;i++) {
         cells[i].addEventListener('mouseover', function color() {
-            this.style.backgroundColor = 'blue'; /*using this.style instead of cells.style works!!!!*/
+            this.style.backgroundColor = '#'+ randomColor(); /*using this.style instead of cells.style works!!!!*/
         })
     }
 }
