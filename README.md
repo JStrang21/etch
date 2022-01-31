@@ -1,3 +1,5 @@
-Going to make a etch-a-sketch webpage:
-Input number then move mouse over squares and a random color will fill in for each child the mouse moves over.
-Still need style it and add more buttons for different options.
+The purpose of this project is to put the Javascript, HTML, and CSS I've been learning into practice. 
+I made a webpage with HTML and created a function that generates a grid of squares based on the number you input.
+Each square listens for the mouse to move over it and then generates a random background color.
+
+
